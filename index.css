@@ -261,7 +261,7 @@ nav ul li a:hover::after{
   padding: 50px 20px;
   color: #fff;
   font-family: 'Times New Roman', Times, serif;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .contact-left {
@@ -347,7 +347,7 @@ nav ul li a:hover::after{
 }
 
 /* Responsive */
-/* @media (max-width: 800px) {
+ @media (max-width: 800px) {
   .contact {
     flex-direction: column;
   }
@@ -356,5 +356,5 @@ nav ul li a:hover::after{
   .contact-right {
     width: 100%;
   }
-} */
+} 
 
