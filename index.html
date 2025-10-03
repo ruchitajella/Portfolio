@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="container" id="home">
+   <nav>
+         <div class="logo">MyPortfolio</div>
+        <ul>
+            <li ><a href="#home">Home</a></li>
+            <li ><a href="#skills">Skills</a></li>
+            <li ><a href="#projects">Projects</a></li>
+            <li ><a href="#education">Education</a></li>
+            <li ><a href="#contact">Contact</a></li>
+        </ul>
+   </nav>
+   <div class="header-text">
+        <h5>Hi, I'm </h5>
+        <h1>Ruchitanjani Jella</h1>
+        <h5>Python | SQL | Front End </h5>
+        <p>A versatile developer with a passion for building intelligent and user-friendly solutions. My skills range from front-end development with React.js to machine learning with Python, as shown in my projects. I enjoy tackling complex problems, writing clean and efficient code, and am always eager to learn new technologies to create impactful applications.</p>
+   </div>
+   <a href="Resume.pdf" target="_blank" class="resume-btn">View Resume</a>
+</div>
+
+<!------Skills------>
+<section class="skills" id="skills">
+    <div class="ski"></div>
+    <h2> Skills</h2>
+    <div class="grid">
+        <div><img src="Logo/html.webp" alt="HTML"><p>HTML</p></div>
+        <div><img src="Logo/css.webp" alt="CSS"><p>CSS</p></div>
+        <div><img src="Logo/js.webp" alt="JS"><p>JavaScript</p></div>
+        <div><img src="Logo/python.webp" alt="Python"><p>Python</p></div>
+        <div><img src="Logo/git.webp" alt="Git"><p>Git</p></div>
+        <div><img src="Logo/sql.webp" alt="SQL"><p>SQL</p></div>
+    </div>
+</section>
+
+<!--- Projects --->
+<section class="projects" id="projects">
+  <h2>My Projects</h2>
+  <div class="project-grid">
+
+    <!-- Project Card 1 -->
+    <div class="project-card">
+      <img src="Logo/eye.jpg" alt="Project 1">
+      <h3>Cursor Control System</h3>
+      <p>A system that allows users to control the cursor using eye movements, enhancing accessibility for individuals with disabilities.</p>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="project-card">
+      <img src="Logo/vote.webp" alt="Project 2">
+      <h3>Online Voting System</h3>
+      <p>Developed a secure online voting system using MERN stack and MongoDB, ensuring voter anonymity and data integrity.</p>
+    </div>
+
+    <!-- Project Card 3 -->
+    <div class="project-card">
+      <img src="Logo/senti.png" alt="Project 3">
+      <h3>Sentiment Analysis Web App</h3>
+      <p>A web app that analyzes the sentiment of user-provided text using NLP techniques.</p>
+    </div>
+
+  </div>
+</section>
+
+<!--- Education --->
+<section class="education" id="education">
+  <h2>Education</h2>
+  <div class="education-flex">
+    <!-- Left image -->
+    <div class="edu-image">
+      <img src="Logo/edu.jpg" alt="Education">
+    </div>
+  <div class="edu-container">
+
+    <!-- B.Tech -->
+    <div class="edu-card">
+      <div class="edu-info">
+        <h3>Bachelor of Technology (CSE-IoT)</h3>
+        <p>VNRVJIET, Hyderabad</p>
+        <p>2022 - 2026</p>
+      </div>
+    </div>
+
+    <!-- 12th -->
+    <div class="edu-card">
+      <div class="edu-info">
+        <h3>Senior Secondary Education (MPC)</h3>
+        <p>Sri Gayatri Junior College, Hyderabad</p>
+        <p>2020 - 2022</p>
+      </div>
+    </div>
+
+    <!-- 10th -->
+    <div class="edu-card">
+      <div class="edu-info">
+        <h3>Secondary Education (10th)</h3>
+        <p>Gowtham Model School, Hyderabad</p>
+        <p>2010 - 2020</p>
+      </div>
+    </div>
+</div>
+</div>
+</section>
+
+<!---contact--->
+<section class="contact" id="contact">
+  <div class="contact-left">
+    <h2>Let's Connect</h2>
+    <p>Have a project in mind or just want to chat? Feel free to reach out!</p>
+    
+    <ul class="contact-info">
+      <li><span ><img src="Logo/mail.png" alt="" class="icon"></span> <a href="mailto:jellaruchitanjani@gmail.com">jellaruchitanjani@gmail.com</a></li>
+      <li><span class="icon"><img src="Logo/github.png" alt="" class="icon"></span><a href="https://github.com/ruchitajella">GitHub</a></li>
+      <li><span class="icon"><img src="Logo/link.png" alt="" class="icon"></span> <a href="https://www.linkedin.com/in/ruchitanjani-jella/">LinkedIn</a></li>
+    </ul>
+  </div>
+
+  <div class="contact-right">
+    <form id="contact-form">
+      <label>Your Name</label>
+      <input type="text" placeholder="John Doe">
+
+      <label>Email Address</label>
+      <input type="email" placeholder="john@example.com">
+
+      <label>Your Message</label>
+      <textarea placeholder="Enter your message..."></textarea>
+
+      <button type="submit">Send Message →</button>
+    </form>
+  </div>
+</section>
+<script src="index.js"></script>
+</body>
+</html> 

@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: #1b1313;
+    color: rgb(235, 229, 244);
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position : fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+nav ul{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 10px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(235, 229, 244);
+    font-size: 18px;
+    position: sticky;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(240, 70, 70);
+    position : absolute;
+    left: 0;
+    bottom: -6px; 
+   
+}
+nav ul li a:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+.header-text{
+    margin-top: 15%;
+    text-align: center;
+    font-size: 30px;
+
+}
+.header-text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color:rgb(240, 70, 70);
+}
+.header-text p{
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.resume-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(235, 229, 244);
+    border: 2px solid rgb(240, 70, 70);
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 25px;
+    position: fixed ;
+    bottom: 10px;
+    right: 10px;
+
+}
+.resume-btn:hover {
+    background: rgb(240, 70, 70);
+    transform: scale(1.05); /* smooth grow on hover */
+}
+ .skills{
+    margin-top: 300px;
+    margin-bottom: 200px;
+ }
+ .skills .grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 80px 5px;
+  text-align: center;
+  margin-top: 50px;
+
+}
+.skills img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #c21919;
+  border-radius: 10px;
+  padding: 5px;
+  background: white;
+}
+.skills h2{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(240, 234, 234);
+    margin-bottom: 100px;
+}
+.skills p{
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgb(235, 229, 244);
+}
+
+.projects {
+  margin: 200px auto;
+  padding: 20px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 32px;
+  margin-bottom: 70px;
+  color: #fff; /* adjust based on your theme */
+  position: relative;
+}
+
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+}
+
+.project-card {
+  background: #2c2828;   /* dark card */
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(48, 45, 45, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+.project-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: rgb(240, 70, 70);
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+
+.education {
+  margin: 100px auto;
+  padding: 20px;
+  max-width: 1000px; /* increased to accommodate left image and right cards */
+
+}
+.education h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #fff; /* adjust based on your theme */
+  position: relative;
+  text-align: center;
+}
+.education-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 200px;
+}
+/* Left image */
+.edu-image {
+  flex: 1; /* takes left space */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.edu-image img {
+  width: 300px; /* adjust as needed */
+  height:300px;
+  border-radius: 12px;
+  margin-top: 60px;
+
+}
+
+/* Right side cards */
+.edu-container {
+  flex: 2; /* takes more space on the right */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+/* Each card */
+.edu-card {
+  display: flex;
+  justify-content: center; /* center text horizontally */
+  align-items: center;     /* center text vertically */
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* center inside card */
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Card text */
+.edu-info h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: rgb(240, 70, 70);
+}
+
+.edu-info p {
+  font-size: 14px;
+  color: #ccc;
+  margin: 2px 0;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 50px;
+}
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-left h2 {
+  font-size: 36px;
+  color: rgb(240, 70, 70); /* pink/red heading */
+  margin-bottom: 20px;
+}
+
+.contact-left p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.contact-info li:hover {
+  color: #f05454;
+}
+
+.contact-right {
+  flex: 1;
+}
+.contact-info li a{
+  text-decoration: none;
+  color: inherit;
+}
+.contact-info li img.icon{
+  width: 20px;
+  height: 20px;
+}
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+}
+
+.contact-right textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-right button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(240, 70, 70);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-right button:hover {
+  background: #ff6b6b;
+}
+
+/* Responsive */
+/* @media (max-width: 800px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+} */
+
